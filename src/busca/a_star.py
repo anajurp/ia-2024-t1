@@ -2,9 +2,8 @@
 import heapq
 
 
-def a_star(graph, start: int, goal: int) -> (int, float, [int]):  
+def a_star(graph, start: int, goal: int) -> (int, float, [int]):  # type: ignore comment; # type: ignore comment;  # noqa: E501
     """Implementação do algoritmo A*."""
-    # type: ignore comment;
 
     open_list = [(0, start)]
     heapq.heapify(open_list)
